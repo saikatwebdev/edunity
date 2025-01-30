@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Untitled-1 (2).png" id="logo">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="front-view-education-day-concept.jpg" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="front-view-education-day-concept.jpg" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="front-view-education-day-concept.jpg" alt="Slide 3">
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to EduNity</h1>
+            <p>Learn, Grow, Succeed</p>
+            <a href="#courses" class="cta">Explore Courses</a>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2>Our Courses</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <h3>Web Development</h3>
+                <p>Learn to build modern websites.</p>
+            </div>
+            <div class="course-card">
+                <h3>Data Science</h3>
+                <p>Master data analysis and machine learning.</p>
+            </div>
+            <div class="course-card">
+                <h3>Mobile Development</h3>
+                <p>Create apps for iOS and Android.</p>
+            </div>
+            <div class="course-card">
+                <h3>Data Structure & Algorithm</h3>
+                <p>Become a Problem Solver</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a leading online education platform providing high-quality courses to help you achieve your career goals.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 EduNity. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
